@@ -80,7 +80,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(getApplicationContext(), "Row " + rowId + " is seccessfully inserted", Toast.LENGTH_LONG).show();
             }
 
-
+            finish();
+            startActivity(getIntent());
         }
 
         if (v.getId() == R.id.displayAllDataButtonId) {
@@ -106,6 +107,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             showData("Person Details", stringBuffer.toString());
 
+            
+
         } else if (v.getId() == R.id.updateDataButtonId) {
 
             Boolean isUpdated = databaseHelper.updateData(id, name, age, gender);
@@ -119,6 +122,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(getApplicationContext(), "Data is not Updated", Toast.LENGTH_LONG).show();
             }
 
+            finish();
+            startActivity(getIntent());
 
         }
 
@@ -132,6 +137,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(getApplicationContext(), "Data is not Deleted", Toast.LENGTH_LONG).show();
             }
 
+            finish();
+            startActivity(getIntent());
 
         }
 
