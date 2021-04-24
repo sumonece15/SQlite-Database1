@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private EditText nameEditText, ageEditText, genderEditText, idEditText;
     //private AutoCompleteTextView genderAutoCompleteText;
-    String [] gender = {"Male", "Female", "Others"};
+    String[] gender = {"Male", "Female", "Others"};
 
     private Button addButton, displayAllData, updateData, deleteData;
 
@@ -107,7 +107,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             showData("Person Details", stringBuffer.toString());
 
-            
 
         } else if (v.getId() == R.id.updateDataButtonId) {
 
